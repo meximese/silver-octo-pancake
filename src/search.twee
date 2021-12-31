@@ -7,13 +7,13 @@ Select from the options below or enter another [[Clue->Clues]]
   <<textbox "_input" "" autofocus>>
   <<button "Enter a clue">>
     <<if ["Understudy", "understudy"].includes(_input.toLowerCase())>>
-        <<goto "Understudy">>
+        <<goto "understudy">>
       <</if>>
     <<if ["Chatter"].includes(_input.toLowerCase())>>
         <<goto "chatter">>
       <</if>>
     <<if ["Custom Magic", "custom magic"].includes(_input.toLowerCase())>>
-        <<goto "Custom Magic">>
+        <<goto "custom magic">>
       <</if>>
     <<if ["Frances", "frances"].includes(_input.toLowerCase())>>
         <<goto "frances">>
