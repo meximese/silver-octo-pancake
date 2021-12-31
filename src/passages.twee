@@ -1,0 +1,50 @@
+:: Clues
+<<include search_bar>>
+
+:: thurston
+<<include search_link>>
+
+:: dorny
+<<include search_link>>
+
+:: 4511
+<<include search_link>>
+
+:: houdini
+<<include search_link>>
+
+:: dayjob
+<<include search_link>>
+
+:: missj
+<<include search_link>>
+
+:: travel
+<<include search_link>>
+
+:: trix
+  <<nobr>>
+    <<include search_link>>
+    <<pop>>
+      TRIX. What can it all mean?
+    <</pop>>
+    <div style="padding:56.25% 0 0 0;position:relative;">
+      <iframe src="https://player.vimeo.com/video/565936011?h=162d8eff64&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="V04"></iframe>
+    </div>
+    <script src="https://player.vimeo.com/api/player.js">
+  <</nobr>>
+
+:: Custom Magic
+<<include search_link>>
+
+:: frances
+<<include search_link>>
+
+:: marie
+<<include search_link>>
+
+:: Understudy
+<<include search_link>>
+
+:: chatter
+<<include search_link>>

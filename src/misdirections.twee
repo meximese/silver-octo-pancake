@@ -1,0 +1,54 @@
+:: StoryTitle
+misdirections
+
+:: StoryData
+{
+	"ifid": "893AC915-8142-4F60-805E-A9DD859171B5",
+	"format": "SugarCube",
+	"format-version": "2.36.1",
+	"start": "Clues",
+	"zoom": 1
+}
+
+:: StoryInit
+<<widget "pop" container>>
+	<<if _args[0]>>
+		<<set _popSetup to _args[0]>>
+	<<else>>
+		<<set _popSetup to null>>
+	<</if>>
+	<<set _popContents to _contents>>
+	<<script>>
+		Dialog.setup(State.temporary["popSetup"]);
+    Dialog.wiki(State.temporary["popContents"]);
+    Dialog.open();
+	<</script>>
+<</widget>>
+
+:: Story Stylesheet [stylesheet]
+body {
+	background-color: black;
+	color: cornflowerblue;
+	font-family: Calibri,sans-serif;
+	font-size: 125%;
+}
+a:link {
+	color: magenta;
+}
+#ui-bar { display: none !important; }
+#story {
+	margin-left: 2rem !important;
+	margin-right: 2rem !important;
+}
+.flex-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-content: center;
+}
+.flex-wrapper.search input {
+	flex: 1 1 70%;
+}
+.flex-wrapper.search button {
+	flex: 1 1 30%;
+}

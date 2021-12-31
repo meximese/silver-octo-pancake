@@ -1,0 +1,50 @@
+:: search_link
+Select from the options below or enter another [[Clue->Clues]]
+
+:: search_bar
+<<nobr>>
+  <div class="flex-wrapper search">
+  <<textbox "_input" "" autofocus>>
+  <<button "Enter a clue">>
+    <<if ["Understudy", "understudy"].includes(_input.toLowerCase())>>
+        <<goto "Understudy">>
+      <</if>>
+    <<if ["Chatter"].includes(_input.toLowerCase())>>
+        <<goto "chatter">>
+      <</if>>
+    <<if ["Custom Magic", "custom magic"].includes(_input.toLowerCase())>>
+        <<goto "Custom Magic">>
+      <</if>>
+    <<if ["Frances", "frances"].includes(_input.toLowerCase())>>
+        <<goto "frances">>
+      <</if>>
+    <<if ["Marie", "marie"].includes(_input.toLowerCase())>>
+        <<goto "marie">>
+      <</if>>
+    <<if ["dayjob", "day job", "Day Job", "DayJob"].includes(_input.toLowerCase())>>
+        <<goto "dayjob">>
+      <</if>>
+    <<if ["missj", "Miss J", "miss j"].includes(_input.toLowerCase())>>
+        <<goto "missj">>
+      <</if>>
+    <<if ["travel", "Travel"].includes(_input.toLowerCase())>>
+        <<goto "travel">>
+      <</if>>
+    <<if ["trix", "Trix"].includes(_input.toLowerCase())>>
+        <<goto "trix">>
+        <</if>>
+    <<if ["4511"].includes(_input.toLowerCase())>>
+        <<goto "4511">>
+      <</if>>
+    <<if ["houdini", "Houdini"].includes(_input.toLowerCase())>>
+        <<goto "houdini">>
+      <</if>>
+    <<if ["dorny", "Dorny", "Uncle Wern"].includes(_input.toLowerCase())>>
+        <<goto "dorny">>
+    <<else>>
+        <<replace "#output">><<= either(["Dorny Says: You'll hafta try again.", "Nope. Try another.", "That's just an idle rumor.", "Misdirections indeed. Try again."])>><</replace>>
+      <</if>>
+  <</button>>
+  </div>
+  <span id="output"></span>
+<</nobr>>
