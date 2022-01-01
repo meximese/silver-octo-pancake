@@ -1,0 +1,14 @@
+:: widgets
+<<widget "pop" container>>
+	<<if _args[0]>>
+		<<set _popSetup to _args[0]>>
+	<<else>>
+		<<set _popSetup to null>>
+	<</if>>
+	<<set _popContents to _contents>>
+	<<script>>
+		Dialog.setup(State.temporary["popSetup"]);
+    Dialog.wiki(State.temporary["popContents"]);
+    Dialog.open();
+	<</script>>
+<</widget>>
